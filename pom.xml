@@ -491,40 +491,6 @@
                         <artifactId>maven-jxr-plugin</artifactId>
                         <version>2.1</version>
                     </plugin>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>cobertura-maven-plugin</artifactId>
-						<version>2.5.1</version>
-						<configuration>
-							<formats>
-								<format>html</format>
-								<format>xml</format>
-							</formats>
-						</configuration>
-					</plugin>
-					<!-- CODE COVERAGE -->
-					<plugin>
-						<groupId>org.jacoco</groupId>
-						<artifactId>jacoco-maven-plugin</artifactId>
-						<version>0.7.2.201409121644</version>
-						<extensions>true</extensions>
-						<executions>
-							<execution>
-								<id>jacoco-initialize</id>
-								<phase>process-resources</phase>
-								<goals>
-									<goal>prepare-agent</goal>
-								</goals>
-							</execution>
-							<execution>
-								<id>jacoco-site</id>
-								<phase>post-integration-test</phase>
-								<goals>
-									<goal>report</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
                 </plugins>
             </reporting>
         </profile>
